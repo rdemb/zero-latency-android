@@ -1,0 +1,33 @@
+# ==========================================
+# ZERO-LATENCY-ANDROID .GITIGNORE
+# ==========================================
+
+# 1. Environment variables and secrets (CRITICAL)
+.env
+config.json
+secret*
+*.pem
+*.key
+
+# 2. Heavy AI models (Local LLM)
+*.gguf
+*.bin
+models/
+
+# 3. Logs and databases (Ring Buffers/Cache)
+*.log
+*.sqlite3
+*.db
+trading_bot.log
+
+# 4. Python cache and artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
+# 5. OS generated files (Android/Windows/Mac)
+.DS_Store
+Thumbs.db
+nohup.out
